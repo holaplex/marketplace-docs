@@ -49,10 +49,10 @@ const config = {
         respectPrefersColorScheme: false
       },
       navbar: {
-        title: 'My Site',
+        title: 'Holaplex',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Holaplex Wave Logo',
+          src: 'img/wave.png',
         },
         items: [
           {
