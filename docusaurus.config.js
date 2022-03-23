@@ -9,7 +9,7 @@ const config = {
   title: 'Holaplex',
   tagline: 'Let us ower your Marketplace',
   url: 'https://holaplex.com',
-  baseUrl: '/',
+  baseUrl: '/marketplace-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -96,10 +96,6 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/holaplex/marketplace',
