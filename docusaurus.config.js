@@ -9,7 +9,7 @@ const config = {
   title: 'Holaplex',
   tagline: 'Let us power your Marketplace',
   url: 'https://holaplex.com',
-  baseUrl: '/', // '/marketplace-docs/',
+  baseUrl: '/marketplace-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
