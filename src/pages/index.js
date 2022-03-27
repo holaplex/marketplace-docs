@@ -1,40 +1,24 @@
 import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { Redirect } from '@docusaurus/router';
+import Head from '@docusaurus/Head';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+export default function Homepage() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <>
+      <Head>
+        <meta title="Holaplex Marketplace Docs" />
+        <meta property="og:title" content="Holaplex Marketplace Docs" />
+        <meta
+          property="og:description"
+          content="Let us power your Marketplace"
+        />
+        <meta
+          property="description"
+          content="Let us power your Marketplace"
+        />
+        <link rel="canonical" href="https://holaplex.com" />
+      </Head>
+      <Redirect to="/docs/introduction" />
+    </>
   );
 }

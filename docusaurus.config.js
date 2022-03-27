@@ -7,9 +7,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Holaplex',
-  tagline: 'Let us ower your Marketplace',
+  tagline: 'Let us power your Marketplace',
   url: 'https://holaplex.com',
-  baseUrl: '/marketplace-docs/',
+  baseUrl: '/', // '/marketplace-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -57,12 +57,17 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'introduction',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {
-            href: 'https://github.com/holaplex/marketplace',
+            label: 'Create A Marketplace',
+            href: 'https://holaplex.com',
+            position: 'right'
+          },
+          {
+            href: 'https://github.com/holaplex/',
             label: 'GitHub',
             position: 'right',
           },
@@ -72,12 +77,24 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Company',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Blog',
+                href: 'https://medium.com/holaplex',
               },
+              {
+                label: 'About Holaplex',
+                href: 'https://www.holaplex.com/about',
+              },
+              {
+                label: 'Terms Of Service',
+                href: 'https://docs.google.com/document/d/1jskpoCdDm7DU2IbeXwRhhl5LGiNhonAx2HsmfJlDsEs/',
+              },
+              {
+                label: 'Privacy Policy',
+                href: 'https://docs.google.com/document/d/12uQU7LbLUd0bY7Nz13-F9cua5Wk8mnRNBlyDzF6gRmo/',
+              }
             ],
           },
           {
@@ -94,16 +111,37 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Resources',
             items: [
               {
                 label: 'GitHub',
                 href: 'https://github.com/holaplex/marketplace',
               },
+              {
+                label: 'Docs',
+                href: '/',
+              },
+              {
+                label: 'FAQ',
+                href: 'https://holaplex-support.zendesk.com/hc/en-us/sections/4407417107475-FAQ',
+              },
+              {
+                label: 'Setting Up A Store',
+                href: 'https://holaplex-support.zendesk.com/hc/en-us/sections/4407782141971-Set-Up-A-Store',
+              },
+              {
+                label: 'Minting NFTs',
+                href: 'https://holaplex-support.zendesk.com/hc/en-us/sections/4407791450515-Minting-NFTs',
+              },
+              {
+                label: 'Selling NFTs',
+                href: 'https://holaplex-support.zendesk.com/hc/en-us/sections/4407792008979-Selling-NFTs',
+              },
+
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Holaplex.`,
       },
       prism: {
         theme: lightCodeTheme,

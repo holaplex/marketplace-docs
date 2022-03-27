@@ -1,5 +1,5 @@
 ---
-id: intro
+id: introduction
 title: Welcome
 description: 'Holaplex Marketplace Data'
 sidebar_position: 1
