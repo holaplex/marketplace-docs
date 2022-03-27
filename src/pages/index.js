@@ -18,7 +18,7 @@ export default function Homepage() {
         />
         <link rel="canonical" href="https://holaplex.com" />
       </Head>
-      <Redirect to="/docs/introduction" />
+      <Redirect to="/marketplace-docs/docs/introduction" />
     </>
   );
 }
