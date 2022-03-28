@@ -7,4 +7,4 @@ sidebar_position: 1
 
 # Introduction to Data
 
-> Graph QL API Endpoint: https://graph.holaplex.com/v0
+> Graph QL API Endpoint: https://graph.holaplex.com/v1
